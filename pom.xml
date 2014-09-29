@@ -2,6 +2,13 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
+  <parent>
+    <groupId>org.onehippo.cms7</groupId>
+    <artifactId>hippo-cms7-release</artifactId>
+    <version>7.9.3</version>
+  </parent>
+
+
   <groupId>com.aharpour.ebrahim</groupId>
   <artifactId>versions-cleaner</artifactId>
   <version>1.00.00-SNAPSHOT</version>
@@ -11,9 +18,6 @@
     <groovy.version>2.1.5</groovy.version>
     <groovy.eclipse.version>2.7.0-01</groovy.eclipse.version>
     <groovy.eclipse.batch>2.1.5-03</groovy.eclipse.batch>
-    <javax.jcr.version>2.0</javax.jcr.version>
-    <hippo.repository.version>2.24.09</hippo.repository.version>
-    <org.slf4j.version>1.5.6</org.slf4j.version>
   </properties>
 
   <scm>
@@ -29,27 +33,24 @@
       <artifactId>groovy-all</artifactId>
       <version>${groovy.version}</version>
     </dependency>
-    
+
     <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>slf4j-api</artifactId>
-      <version>${org.slf4j.version}</version>
     </dependency>
 
     <dependency>
       <groupId>javax.jcr</groupId>
       <artifactId>jcr</artifactId>
-      <version>${javax.jcr.version}</version>
       <scope>provided</scope>
     </dependency>
 
     <dependency>
       <groupId>org.onehippo.cms7</groupId>
       <artifactId>hippo-repository-api</artifactId>
-      <version>${hippo.repository.version}</version>
     </dependency>
-    
-    
+
+
 
   </dependencies>
 
